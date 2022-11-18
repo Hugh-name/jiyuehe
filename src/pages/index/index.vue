@@ -1,15 +1,5 @@
 <template>
   <view class="index scroll-view">
-    <!-- <nut-audio
-    class="moe-audio"
-    :url="mp3"
-    :muted="false"
-    :autoplay="autoplay"
-    :loop="false"
-    type="none">
-    </nut-audio> -->
-    <audio src="@/assets/j.mp3" :controls="false" :muted="false" :loop="false"></audio>
-
     <moe-row flexWrap="wrap" type="flex" justify="center">
       <moe-col span="6" v-for="(item, index) in list" :key="index">
         <moe-button type="primary" @click="eventHandle(item)">{{ item.title }}</moe-button>
@@ -62,16 +52,14 @@ const list = ref([
   { title: '耶耶鸡', url: '' },
   { title: '鸡太美', url: '' },
 ])
-const audioUrl = ref<string>('')
-const autoplay = ref<boolean>(false)
 
+/**
+  *
+  */
 const eventHandle = (item) => {
-  // audioUrl.value = item.url
-  // autoplay.value = true
-
   const innerAudioContext = createInnerAudioContext()
   innerAudioContext.autoplay = true
-  innerAudioContext.src = 'http://jilehe.125ks.cn/Voice/jlh/res/j.mp3'
+  innerAudioContext.src = item.url
   innerAudioContext.onPlay(() => {
     console.log('开始播放')
   })
