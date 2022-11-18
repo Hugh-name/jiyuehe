@@ -4,12 +4,13 @@
   "description": "jiyuehe",
   "appid": "wx26dec1625e09d5e4",
   "setting": {
-    "urlCheck": true,
-    "es6": false,
-    "enhance": false,
-    "compileHotReLoad": false,
-    "postcss": false,
-    "minified": false
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "bigPackageSizeSupport": true,
+    "ignoreDevUnusedFiles": false
   },
   "compileType": "miniprogram"
 }

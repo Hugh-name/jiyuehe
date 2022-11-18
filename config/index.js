@@ -1,3 +1,5 @@
+import path from 'path'
+
 const config = {
   projectName: 'myApp',
   date: '2022-11-17',
@@ -26,6 +28,9 @@ const config = {
   },
   sass:{
     data: `@import "@nutui/nutui-taro/dist/styles/variables.scss";`
+  },
+  alias: {
+    '@': path.resolve(__dirname, '..', 'src'),
   },
   mini: {
     postcss: {
