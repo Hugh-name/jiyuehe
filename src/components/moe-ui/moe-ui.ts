@@ -4,6 +4,7 @@ import MoeRow from '@/components/moe-ui/moe-Layout/moe-row/moe-row.vue'
 import MoeCol from '@/components/moe-ui/moe-Layout/moe-col/moe-col.vue'
 import MoeButton from '@/components/moe-ui/moe-button/moe-button.vue'
 import MoeAudio from '@/components/moe-ui/moe-audio/moe-audio.vue'
+import MoeScroll from '@/components/moe-ui/moe-scroll/moe-scroll.vue'
 
 import { App } from "vue"
 export const initMoeUI = (app: App) => {
@@ -13,4 +14,5 @@ export const initMoeUI = (app: App) => {
   app.component('MoeCol', MoeCol)
   app.component('MoeButton', MoeButton)
   app.component('MoeAudio', MoeAudio)
+  app.component('MoeScroll', MoeScroll)
 }

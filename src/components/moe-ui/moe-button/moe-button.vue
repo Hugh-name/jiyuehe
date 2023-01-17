@@ -14,5 +14,9 @@ withDefaults(defineProps<{
 </script>
 
 <style lang="scss">
-.moe-button {}
+.moe-button {
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+}
 </style>

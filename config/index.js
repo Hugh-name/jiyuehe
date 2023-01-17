@@ -3,7 +3,7 @@ import path from 'path'
 const config = {
   projectName: 'myApp',
   date: '2022-11-17',
-  designWidth: 375,
+  designWidth: 750,
   deviceRatio: {
     640: 2.34 / 2,
     750: 1,
@@ -20,6 +20,9 @@ const config = {
     ],
     options: {
     }
+  },
+  env: {
+    MOE_BASE_URL: '"https://moemone-resource.oss-cn-shenzhen.aliyuncs.com/lichuangwei/"'
   },
   framework: 'vue3',
   compiler: 'webpack5',

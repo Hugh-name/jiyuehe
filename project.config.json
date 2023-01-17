@@ -1,5 +1,5 @@
 {
-  "miniprogramRoot": "./dist",
+  "miniprogramRoot": "dist/",
   "projectname": "myApp",
   "description": "jiyuehe",
   "appid": "wx26dec1625e09d5e4",
@@ -10,7 +10,24 @@
     "postcss": true,
     "minified": true,
     "bigPackageSizeSupport": true,
-    "ignoreDevUnusedFiles": false
+    "ignoreDevUnusedFiles": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
   },
-  "compileType": "miniprogram"
+  "compileType": "miniprogram",
+  "libVersion": "2.27.3",
+  "isGameTourist": false,
+  "srcMiniprogramRoot": "dist/",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
 }
